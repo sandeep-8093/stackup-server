@@ -28,7 +28,8 @@ app.use(helmet());
 const allowedOrigins = [
   'http://localhost:4200',              // Angular dev server
   'http://localhost:3000',              // fallback React/other local dev
-  'https://stackup-server.onrender.com' // production (self-reference for health checks)
+  'https://stackup-server-sx4b.onrender.com', // production (self-reference/backend origin)
+  'https://stackup-client.vercel.app'         // frontend Vercel deployment
 ];
 
 app.use(cors({
